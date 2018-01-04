@@ -5,6 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "bin": "bin/y1l.js",
+  "repository": "https://github.com/MiYogurt/y1l.git",
   "files": ["lib", "bin", "types", "index.js"],
   "scripts": {
     "compile": "tsc",
