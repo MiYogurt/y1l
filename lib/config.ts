@@ -12,6 +12,7 @@ export interface Config {
         server: object;
     };
     serviceWorkerConfig?: object;
+    faviconURL?: string;
 }
 
 let _config: Config = {
