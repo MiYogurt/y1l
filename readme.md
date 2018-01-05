@@ -4,7 +4,26 @@
 
 从 vue-hackernews 提取出来的一些公共代码。
 
-# how to use
+```ts
+export interface Config {
+    port?: number;
+    projectPath?: string;
+    status404?: string;
+    status500?: string;
+    template?: string;
+    context?: object;
+    handleError?: Function;
+    webpackConfig?: {
+        base: object;
+        client: object;
+        server: object;
+    };
+    serviceWorkerConfig?: object;
+    faviconURL?: string;
+}
+```
+
+## how to use
 
 add some compile dependencies to package.json
 
