@@ -8,20 +8,19 @@
 
 ```ts
 export interface Config {
-    port?: number;
-    projectPath?: string;
-    status404?: string;
-    status500?: string;
-    template?: string; // html 模板的位置
-    context?: object; // 模板里面可以访问的值
-    handleError?: Function;
+    port?: number
+    projectPath?: string
+    status404?: string
+    status500?: string
+    template?: string
+    context?: (req: Request) => Promise<any>
+    handleError?: Function
     webpackConfig?: {
-        base: object;
-        client: object;
-        server: object;
-    };
-    serviceWorkerConfig?: object; 
-    faviconURL?: string; // 图标的地址 如 ./public/logo-48.png
+        base: object
+        client: object
+        server: object
+    }
+    faviconURL?: string
 }
 ```
 
